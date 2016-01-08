@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "100"; ObjectID = "2tk-85-k7c"; */
+"2tk-85-k7c.text" = "100";
+
+/* Class = "UILabel"; text = "is really"; ObjectID = "Dg4-JS-FI7"; */
+"Dg4-JS-FI7.text" = "等于";
+
+/* Class = "UILabel"; text = "degree Fahrenheit"; ObjectID = "ER3-fA-CRf"; */
+"ER3-fA-CRf.text" = "华氏温度";
+
+/* Class = "UITabBarItem"; title = "Convert"; ObjectID = "NDu-bg-no2"; */
+"NDu-bg-no2.title" = "温度转换";
+
+/* Class = "UILabel"; text = "degrees Celsius"; ObjectID = "SiN-OT-Gde"; */
+"SiN-OT-Gde.text" = "摄氏温度";
+
+/* Class = "UITextField"; placeholder = "value"; ObjectID = "TJS-J7-tn9"; */
+"TJS-J7-tn9.placeholder" = "value";
+
+/* Class = "UITabBarItem"; title = "Web"; ObjectID = "qex-oh-ip9"; */
+"qex-oh-ip9.title" = "网页";
+
+/* Class = "UITabBarItem"; title = "Map"; ObjectID = "x0i-Dm-f6G"; */
+"x0i-Dm-f6G.title" = "地图";

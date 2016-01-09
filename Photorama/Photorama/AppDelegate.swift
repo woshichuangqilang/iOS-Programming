@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Photorama
 //
-//  Created by Wenslow on 16/1/8.
+//  Created by Wenslow on 16/1/9.
 //  Copyright © 2016年 Wenslow. All rights reserved.
 //
 
@@ -17,11 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
+        //属性注入
         let rootViewController = window?.rootViewController as! UINavigationController
-        
-        let photosViewController = rootViewController.topViewController as! PhotoViewController
-        
-        photosViewController.store = PhotoStore()
+        let photoViewController = rootViewController.topViewController as! PhotoViewController
+        photoViewController.store = PhotoStore()
         
         return true
     }

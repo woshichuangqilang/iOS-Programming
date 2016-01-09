@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "821E830B1C3FF7CA002111D1"
+               BlueprintIdentifier = "82D362F31C412A3D00672CFF"
                BuildableName = "Photorama.app"
                BlueprintName = "Photorama"
                ReferencedContainer = "container:Photorama.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "821E830B1C3FF7CA002111D1"
+            BlueprintIdentifier = "82D362F31C412A3D00672CFF"
             BuildableName = "Photorama.app"
             BlueprintName = "Photorama"
             ReferencedContainer = "container:Photorama.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "821E830B1C3FF7CA002111D1"
+            BlueprintIdentifier = "82D362F31C412A3D00672CFF"
             BuildableName = "Photorama.app"
             BlueprintName = "Photorama"
             ReferencedContainer = "container:Photorama.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "821E830B1C3FF7CA002111D1"
+            BlueprintIdentifier = "82D362F31C412A3D00672CFF"
             BuildableName = "Photorama.app"
             BlueprintName = "Photorama"
             ReferencedContainer = "container:Photorama.xcodeproj">

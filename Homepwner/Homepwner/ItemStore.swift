@@ -28,11 +28,11 @@ class ItemStore {
     func createItem() -> Item {
         
         let newItem = Item(random: true)
-        if allItems.count == 1 {
-            allItems.insert(newItem, atIndex: 0)
-        } else {
-            allItems.insert(newItem, atIndex: 1)
-        }
+//        if allItems.count == 1 {
+//            allItems.insert(newItem, atIndex: 0)
+//        } else {
+        allItems.insert(newItem, atIndex: 0)
+       // }
         return newItem
     }
     

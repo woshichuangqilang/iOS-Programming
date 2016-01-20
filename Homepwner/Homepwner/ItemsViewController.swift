@@ -11,7 +11,7 @@ import UIKit
 class ItemsViewController: UITableViewController {
     
     var itemStore: ItemStore!
-    var noMoreItem = Item(name: "No more item!", serialNumber: "", valueInDollars: 0)
+    //var noMoreItem = Item(name: "No more item!", serialNumber: "", valueInDollars: 0)
     var imageStore: ImageStore!
     
     //为navigation左侧添加一个编辑按钮
@@ -21,6 +21,9 @@ class ItemsViewController: UITableViewController {
         navigationItem.leftBarButtonItem = editButtonItem()
     }
     
+    
+    
+    //MARK: 增加cell
     @IBAction func addNewItem(sender: AnyObject) {
 //        //在0section的最后row，设置一个新的index path
 //        let lastRow = tableView.numberOfRowsInSection(0)
@@ -89,14 +92,9 @@ class ItemsViewController: UITableViewController {
             let item = itemStore.allItems[indexPath.row]
             
             cell.nameLabel.text = item.name
-        
-        if indexPath.row == itemStore.allItems.count - 1 {
-            cell.serialNumberLabel?.text = ""
-            cell.valueLabel.text = ""
-        } else {
             cell.serialNumberLabel?.text = item.serialNumber
             cell.valueLabel.text = "$\(item.valueInDollars)"
-        }
+        
         
         //若value大于50，则设置颜色为绿色。反之红色
         if item.valueInDollars > 50 {
@@ -159,16 +157,16 @@ class ItemsViewController: UITableViewController {
         }
     }
     
-    //使row无法移动到最后一行
-    override func tableView(tableView: UITableView, targetIndexPathForMoveFromRowAtIndexPath sourceIndexPath: NSIndexPath, toProposedIndexPath proposedDestinationIndexPath: NSIndexPath) -> NSIndexPath {
-        if proposedDestinationIndexPath.row == itemStore.allItems.count - 1 {
-            return sourceIndexPath
-        } else {
-            return proposedDestinationIndexPath
-        }
-    }
+//    //使row无法移动到最后一行
+//    override func tableView(tableView: UITableView, targetIndexPathForMoveFromRowAtIndexPath sourceIndexPath: NSIndexPath, toProposedIndexPath proposedDestinationIndexPath: NSIndexPath) -> NSIndexPath {
+//        if proposedDestinationIndexPath.row == itemStore.allItems.count - 1 {
+//            return sourceIndexPath
+//        } else {
+//            return proposedDestinationIndexPath
+//        }
+//    }
     
-    //移动cell
+    //MARK:移动cell
     override func tableView(tableView: UITableView, moveRowAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {
         
         //更新model
@@ -176,14 +174,14 @@ class ItemsViewController: UITableViewController {
         
     }
     
-    //最后一行无法编辑
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        if indexPath.row == itemStore.allItems.count - 1 {
-            return false
-        } else {
-            return true
-        }
-    }
+//    //最后一行无法编辑
+//    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+//        if indexPath.row == itemStore.allItems.count - 1 {
+//            return false
+//        } else {
+//            return true
+//        }
+//    }
     
     //向DetialViewController传值
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -211,7 +209,7 @@ class ItemsViewController: UITableViewController {
 //        tableView.contentInset = insets
 //        tableView.scrollIndicatorInsets = insets
         
-        itemStore.allItems.append(noMoreItem)
+        //itemStore.allItems.append(noMoreItem)
         
 //        tableView.rowHeight = 65
         //cell的高度自动化
